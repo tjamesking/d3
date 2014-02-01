@@ -95,7 +95,7 @@ suite.addBatch({
       assert.strictEqual(f(145999999.999999347), "146M");
       assert.strictEqual(f(1e26), "100Y");
       assert.strictEqual(f(.000001), "1.00µ");
-      assert.strictEqual(f(.009995), "0.0100");
+      assert.strictEqual(f(.009995), "10.0m");
       var f = format(".4s");
       assert.strictEqual(f(999.5), "999.5");
       assert.strictEqual(f(999500), "999.5k");
